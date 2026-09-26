@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Jaiswal | Avengers Initiative</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #05070b;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(5, 7, 11, 0.95);
+            border-bottom: 2px solid #e62429;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #e62429;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e62429;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                radial-gradient(circle at center, #242424 0%, #090b10 45%, #020305 100%);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .avengers-logo {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            border: 5px solid #e62429;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 65px;
+            font-weight: bold;
+            color: #e62429;
+            box-shadow: 0 0 30px #e62429;
+        }
+
+        .hero h1 {
+            margin-top: 30px;
+            font-size: 55px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .hero h2 {
+            color: #e62429;
+            margin-top: 10px;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            margin: 25px auto;
+            max-width: 650px;
+            line-height: 1.8;
+            color: #cccccc;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 30px;
+            margin-top: 15px;
+            background: #e62429;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            color: #e62429;
+            box-shadow: 0 0 20px #e62429;
+        }
+
+        /* SECTIONS */
+        section {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 35px;
+        }
+
+        .section-title span {
+            color: #e62429;
+        }
+
+        /* ABOUT */
+        .about {
+            background: #0c0f15;
+            border-left: 4px solid #e62429;
+            padding: 30px;
+            line-height: 1.8;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            padding: 15px 25px;
+            background: #11151d;
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            border-color: #e62429;
+            box-shadow: 0 0 15px #e62429;
+            transform: translateY(-5px);
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #0c0f15;
+            padding: 30px;
+            border: 1px solid #292d35;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+            border-color: #e62429;
+            box-shadow: 0 0 25px rgba(230, 36, 41, 0.4);
+        }
+
+        .project h3 {
+            color: #e62429;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .project p {
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+            background: #0c0f15;
+            border-top: 2px solid #e62429;
+        }
+
+        .contact p {
+            margin: 12px;
+        }
+
+        .contact a {
+            color: #e62429;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #020305;
+            border-top: 1px solid #333;
+            color: #777;
+        }
+
+        footer strong {
+            color: #e62429;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero h2 {
+                font-size: 18px;
+            }
+
+            .avengers-logo {
+                width: 110px;
+                height: 110px;
+                font-size: 45px;
+            }
+
+            section {
+                padding: 20px;
+                margin: 40px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2>AVENGERS</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <div class="hero">
+
+        <div class="hero-content">
+
+            <div class="avengers-logo">
+                A
+            </div>
+
+            <h1>Krishna Jaiswal</h1>
+
+            <h2>THE DEVELOPER INITIATIVE</h2>
+
+            <p>
+                Computer Science student on a mission to learn,
+                build and solve real-world problems through technology.
+                Currently exploring DSA, software development,
+                web development and machine learning.
+            </p>
+
+            <a href="#projects" class="button">
+                ENTER THE INITIATIVE
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2 class="section-title">
+            <span>01.</span> About Me
+        </h2>
+
+        <div class="about">
+
+            <p>
+                I am Krishna Jaiswal, a Computer Science student
+                passionate about programming and technology.
+                I enjoy learning new concepts, solving coding
+                problems and building projects that can be useful
+                in the real world.
+            </p>
+
+            <br>
+
+            <p>
+                My current focus includes C++, Java, Python,
+                Data Structures and Algorithms, SQL, Web Development
+                and Machine Learning.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h2 class="section-title">
+            <span>02.</span> My Powers
+        </h2>
+
+        <div class="skills">
+
+            <div class="skill">C++</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">DSA</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2 class="section-title">
+            <span>03.</span> Missions
+        </h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>⚡ AICTE Points Tracker</h3>
+
+                <p>
+                    A digital platform for tracking AICTE activity
+                    points with registration, participation,
+                    verification and progress tracking.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🛡 DSA Training</h3>
+
+                <p>
+                    Solving algorithmic problems involving arrays,
+                    strings, searching, sorting, linked lists,
+                    dynamic programming and more.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🚀 Web Development</h3>
+
+                <p>
+                    Learning how to build responsive websites
+                    using HTML, CSS and JavaScript while developing
+                    real-world projects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">
+            <span>04.</span> Contact
+        </h2>
+
+        <p>
+            <strong>Developer:</strong> Krishna Jaiswal
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/" target="_blank">
+                github.com
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 <strong>Krishna Jaiswal</strong>
+            | AVENGERS DEVELOPER INITIATIVE
+        </p>
+
+    </footer>
+
+</body>
+</html>
