@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile {
+            width: 500px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills span {
+            background: #222;
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <img src="profile.jpg" alt="Profile Photo">
+
+        <h1>Krishna Jaiswal</h1>
+
+        <p>Computer Science Student</p>
+
+        <p>
+            Hello! I am learning programming, web development,
+            DSA and software development.
+        </p>
+
+        <div class="skills">
+            <h2>My Skills</h2>
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>Python</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
